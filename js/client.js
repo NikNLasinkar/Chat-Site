@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000', { transports : ['websocket']});
+const socket = io('https://chat-site-production.up.railway.app/' + process.env.PORT || 5000, { transports : ['websocket']});
 
 // Get DOM elements in respective Js variables
 const form = document.getElementById('send-container');
