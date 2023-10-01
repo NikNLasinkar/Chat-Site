@@ -1,4 +1,4 @@
-const socket = io('https://chat-site-production.up.railway.app:' + process.env.PORT || 5000, { transports : ['websocket']});
+const socket = io('https://chat-site-production.up.railway.app/', { transports : ['websocket']});
 
 alert(socket);
 
